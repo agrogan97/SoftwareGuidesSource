@@ -16,6 +16,8 @@ The Summerfield Github can be found at https://github.com/orgs/summerfieldlab/te
 
    GettingStarted.rst
    git.rst
+   rstGuide.rst
+   rstCheatsheet.rst
 
 Indices and tables
 ==================
