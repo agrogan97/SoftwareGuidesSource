@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git Tutorial &mdash; DocsExample  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started" href="GettingStarted.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> DocsExample
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#first-installation">First Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-want-to">I Want To….</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-local-repo-for-my-code">Create a local repo for my code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#store-code-on-github">Store Code on Github</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DocsExample</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Git Tutorial</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/git.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="git-tutorial">
+<h1>Git Tutorial<a class="headerlink" href="#git-tutorial" title="Permalink to this headline"></a></h1>
+<p>Cheatsheet link!:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PDF</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">training</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">downloads</span><span class="o">/</span><span class="n">github</span><span class="o">-</span><span class="n">git</span><span class="o">-</span><span class="n">cheat</span><span class="o">-</span><span class="n">sheet</span><span class="o">.</span><span class="n">pdf</span>
+<span class="n">Visual</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">ndpsoftware</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">git</span><span class="o">-</span><span class="n">cheatsheet</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<section id="first-installation">
+<h2>First Installation<a class="headerlink" href="#first-installation" title="Permalink to this headline"></a></h2>
+<p>Download the appropriate version of git for your system. See <a class="reference external" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> for operating-system specifics.</p>
+<p>With git installed locally, open up a terminal (or a git bash shell if using Windows). Type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">help</span> <span class="n">git</span>
+</pre></div>
+</div>
+<p>This will open up the Github manual in a browser window (handy for referencing) and also confirm successful installation. Git is intrinsically a version control tool, with
+it’s own Command Line Interface (CLI). Github is a an organisation that hosts remote repositories on their own servers that users can access. Therefore you can use
+git without using github, but can’t use github (for version control) without using git!</p>
+<p>Alternatives to Github do exist, for instance Gitlab (<a class="reference external" href="https://about.gitlab.com/">https://about.gitlab.com/</a>) which has some excellent features, and allows users to host their own private
+repository servers.</p>
+<p>With your terminal open, run the following commands to let git know who you are:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;[name]&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;[email address]&quot;</span>
+</pre></div>
+</div>
+<p>replacing [name] and [email address] with your own details, but keeping the speech marks.</p>
+<p>Now, see the sections below to find out how to do what you need to do!</p>
+</section>
+<section id="i-want-to">
+<h2>I Want To….<a class="headerlink" href="#i-want-to" title="Permalink to this headline"></a></h2>
+<p>Find the section below relating to what you want to achieve with git.</p>
+<section id="create-a-local-repo-for-my-code">
+<h3>Create a local repo for my code<a class="headerlink" href="#create-a-local-repo-for-my-code" title="Permalink to this headline"></a></h3>
+<p>Navigate to your source code root directory and run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">init</span>
+</pre></div>
+</div>
+<p>To initialise a new repo. This is a hidden folder, and may not appear in file explorer or equivalent. It is common to also initialise a project with a
+README.md file, and a .gitignore file. These can be created from the terminal with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">touch</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+<span class="n">touch</span> <span class="o">.</span><span class="n">gitignore</span>
+</pre></div>
+</div>
+<p>making sure to include the full stop before gitignore. For Windows users, create these files manually or using Windows-specific commands.</p>
+<p>To add everything to your local repo, regardless of project stage, complete the following steps:</p>
+<p>Run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>This wil add everything to the git staging area. We can see more details about what has been staged and not by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
+</pre></div>
+</div>
+<p>Next, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;commit message&quot;</span>
+</pre></div>
+</div>
+<p>This will commit everything in the staging area to the local repo. Note that this has nothing to do with Github, so far this is entirely on your local machine!
+The -m flag appends a commit message to the command. You can include a short, custom message explaining what changes you have made here, within the speech marks. If you ran
+this command without that flag, git would open a VIM window, where you are expected to type out and enter a message.</p>
+</section>
+<section id="store-code-on-github">
+<h3>Store Code on Github<a class="headerlink" href="#store-code-on-github" title="Permalink to this headline"></a></h3>
+<p>Firstly, make sure you have a Github account. You do this simply from <a class="reference external" href="https://github.com/">https://github.com/</a>.</p>
+<p>The first thing to do is create a new Github repo to store your code, or copy your local repo to. Do this from the green ‘new’ button on the left-hand side toolbar and follow
+the instructions to name it. This will create a unique URL to your</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="GettingStarted.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Alex Grogan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

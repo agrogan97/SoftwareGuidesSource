@@ -1,0 +1,6 @@
+GreatCode
+=========
+
+.. automodule:: GreatCode
+   :members:
+   :undoc-members:
